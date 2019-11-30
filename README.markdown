@@ -1,4 +1,4 @@
-这是一个练习Jenkins使用的Java语言编写的Demo程序，修改自wakaleo/game-of-life（https://github.com/wakaleo/game-of-life）
+这是一个练习Jenkins使用的Java语言编写的Demo程序，修改自wakaleo/game-of-life(https://github.com/wakaleo/game-of-life)。
 
 ## Building the project
 
