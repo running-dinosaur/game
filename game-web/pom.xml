@@ -57,8 +57,6 @@
 							<ignoreResultFailures>true</ignoreResultFailures>
 							<!--设置结果是否有时间戳 -->
 							<testResultsTimestamp>true</testResultsTimestamp>
-							<!-- 允许略过测试 mvn verify –DskipPT=true -->
-							<skipTests>${skipPT}</skipTests>
 						</configuration>
 						<executions>
 							<execution>
