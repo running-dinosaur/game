@@ -37,9 +37,9 @@ pipeline {
 			junit testResults: "**/target/surefire-reports/TEST-*.xml"
 			archiveArtifacts artifacts: '**/target/*.jar,**/target/*.war'
        	}
-       	failure {
+//       	failure {
 //           	mail to: 'yanyingjun@airchina.com', subject: 'The Pipeline failed :('
-       	}
+//       	}
 
    	}
 }
