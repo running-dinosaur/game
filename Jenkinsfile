@@ -38,7 +38,7 @@ pipeline {
 			archiveArtifacts artifacts: '**/target/*.jar,**/target/*.war'
        	}
        	failure {
-           	mail to: 'yanyingjun@airchina.com', subject: 'The Pipeline failed :('
+//           	mail to: 'yanyingjun@airchina.com', subject: 'The Pipeline failed :('
        	}
 
    	}
