@@ -12,7 +12,7 @@ pipeline {
       stage('构建'){
          steps {
             // Run the maven build
-            sh "mvn clean package"
+            sh "mvn clean deploy"
          }
       }
       
