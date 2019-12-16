@@ -11,13 +11,13 @@ pipeline {
 
    
    	stages {
-      	stage('拉取代码'){
-         	steps {
-            	git 'https://github.com/running-dinosaur/game.git'
-         	}
-      	}
+//      	stage('拉取代码') {
+//         	steps {
+//            	git 'https://github.com/running-dinosaur/game.git'
+//         	}
+//      	}
 
-      	stage('构建'){
+      	stage('构建') {
          	steps {
             	// Run the maven build
            		sh "mvn clean deploy"
@@ -25,7 +25,7 @@ pipeline {
          	}
       	}
       
-      	stage('部署'){
+      	stage('部署') {
          	steps {
             	echo "deploy"
          	}
