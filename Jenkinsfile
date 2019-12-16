@@ -36,9 +36,12 @@ pipeline {
        	always {
 			junit testResults: "**/target/surefire-reports/TEST-*.xml"
 			archiveArtifacts artifacts: '**/target/*.jar,**/target/*.war'
+			mail to:"yanyingjun@airchina.com", 
+				subject:"Status for job: ${currentBuild.fullDisplayName}", 
+				body:"Result: ${currentBuild.result}"
        	}
 //       	failure {
-//           	mail to: 'yanyingjun@airchina.com', subject: 'The Pipeline failed :('
+//           	
 //       	}
 
    	}
