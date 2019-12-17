@@ -9,7 +9,10 @@ pipeline {
 		disableConcurrentBuilds()
    	}
 
-   
+   triggers {
+        pollSCM('H * * * *')
+    }
+    
    	stages {
 //      	stage('拉取代码') {
 //         	steps {
@@ -35,7 +38,9 @@ pipeline {
    	post {
        	always {
 			junit testResults: "**/target/surefire-reports/TEST-*.xml"
+			
 			archiveArtifacts artifacts: '**/target/*.jar,**/target/*.war'
+			
 			mail to:"yanyingjun@airchina.com", 
 				subject:"Status for job: ${currentBuild.fullDisplayName}", 
 				body:"Result: ${currentBuild.result}"
