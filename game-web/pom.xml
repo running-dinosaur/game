@@ -110,7 +110,7 @@
 	</dependencies>
 
 	<properties>
-		<spring-version>4.3.7.RELEASE</spring-version>
+		<spring-version>5.2.20.RELEASE</spring-version>
 		<jetty.port>9090</jetty.port>
 		<jetty.stop.port>9999</jetty.stop.port>
 	</properties>
